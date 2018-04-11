@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * Spring Cloud Config 配置中心客户端
  * Created by lizhen on 2018/4/11 0011.
- * RefreshScope 动态刷新
+ * RefreshScope 动态刷新  必须是post请求  注意！注意！注意！
+ * http://localhost:8763/refresh
  */
 @RestController
 @RefreshScope
