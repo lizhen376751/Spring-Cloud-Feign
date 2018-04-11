@@ -1,16 +1,23 @@
+#这个配置文件不进行维护了
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8760/eureka/
+
 server:
   port: 8763
+
 spring:
+  zipkin:
+#zipkin 服务追踪中心的地址
+    base-url: http://localhost:8766
   application:
     name: service-8763
+#开启断路器
 feign:
   hystrix:
     enabled: true
-#    去除密码校验
+#配置中心的去除密码校验
 management:
   security:
     enabled: false
