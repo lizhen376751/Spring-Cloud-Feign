@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  * RefreshScope 动态刷新
  */
 @RestController
-//@RefreshScope
+@RefreshScope
 public class ConfigFromGitHub {
     //返回从配置中心读取的foo变量的值
     @Value("${foo}")
